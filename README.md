@@ -5,7 +5,7 @@
 
 In this assignment, you will build an invoice Generator. The goal of this project is to create a web-based tool that allows users to easily generate and customize their invoices.
 
-[View Demo](https://invoice-generator.com/#/1)
+[View Demo](https://invoice-gen-me.netlify.com)
 
 ### Technology Stack
 
