@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    font-family: 'Roboto Condensed', 'Open Sans', serif;
+}
+
+@media screen and (min-width:1024px) and (max-width:1200px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    html {
+        font-size: 82%;
+    }
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Navbar */
+.custom-navbar-bg {
+    background-color: #3d4c59;
+}
+
+.custom-navbar-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+@media screen and (max-width: 640px) {
+    .custom-footer-grid {
+        grid-template-rows: repeat(3, auto);
+    }
+}
+
+/* Invoice Page Section*/
+.custom-invoice-bg {
+    background-color: #EFF0F3;
+}
+
+.custom-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .custom-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        gap: 1.4rem;
+    }
+
+    .down-sec {
+        grid-row: 2/-1;
+    }
+}
+
+.custom-focus-outline:focus {
+    outline: 1px solid #019F74;
+}
+
+.custom-focus-outline-req:focus:empty {
+    outline: 1px solid #ff00008f;
+}
+
+.custom-focus-outline-req:focus:not(:empty) {
+    outline: 1px solid #019F74;
+}
+
+.custom-focus-outline-req-item {
+    outline: 1px solid #ff00008f;
+}
+
+.custom-button-download {
+    background-color: #019F74;
+}
+
+.custom-border-drop {
+    border: 1.6px solid rgb(173, 173, 173);
+}
+
+.custom-border-drop:focus,
+.custom-border-drop:hover {
+    border: 1.6px solid #019F74;
+}
+
+.cutom-save-defualt-color {
+    color: #019F74;
+}
+
+.custom-line-color {
+    border-top: 1px solid rgb(0, 0, 0, .15)
+}
+
+.cutom-history:hover {
+    background-color: #019F74;
+    color: #fff;
+}
+
+/* Footer */
+.custom-footer-bg {
+    background-color: #DFE3E8;
+}
+
+.cusotm-footer-item-color {
+    color: #3d4c59;
+}
+
+.custom-footer-item-hover:hover {
+    color: #019F74;
+}
